@@ -68,7 +68,22 @@ class App extends Component {
         mountCssBefore.parentNode.insertBefore(style, mountCssBefore);
       };
       birdeatsbug.load();
-      window.birdeatsbug.setOptions({ publicAppId: process.env.BIRD_EATS_BUG_PUBLIC_APP_ID });
+
+      window.birdeatsbug.setOptions({
+                                      publicAppId: process.env.BIRD_EATS_BUG_PUBLIC_APP_ID,
+                                      ui: {
+                                        previewScreen: {
+                                          visualProof: 'required',
+                                          visualProofButtons: {
+                                            screenshot: true,
+                                            screenRecording: true,
+                                          },
+                                          email: 'required',
+                                          title: 'required',
+                                          description: 'required'
+                                        },
+                                      },
+                                    })
     })();
   }
 
