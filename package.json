@@ -2,6 +2,10 @@
   "name": "stackdemo",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.14.16",
+    "node": "12.22.12"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
