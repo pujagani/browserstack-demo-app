@@ -71,6 +71,7 @@ class App extends Component {
       //
       // window.birdeatsbug.setOptions({
       //                                 publicAppId: process.env.BIRD_EATS_BUG_PUBLIC_APP_ID,
+       //                                instantReplay: true,
       //                                 ui: {
       //                                   previewScreen: {
       //                                     visualProof: 'required',
